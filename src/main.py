@@ -9,7 +9,27 @@ def mostrar_menu():
 
 
 def main():
-    print("Proyecto Autónomo 2 - Lógica de Programación en Python")
+    tareas = []  # Lista donde se almacenan las tareas
+
+    while True:
+        mostrar_menu()
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            pass
+        elif opcion == "2":
+            pass
+        elif opcion == "3":
+            pass
+        elif opcion == "4":
+            pass
+        elif opcion == "5":
+            pass
+        elif opcion == "0":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción inválida. Intente nuevamente.")
 
 
 if __name__ == "__main__":
