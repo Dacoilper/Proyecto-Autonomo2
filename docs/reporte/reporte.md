@@ -1,6 +1,6 @@
 # Reporte – Proyecto Autónomo 2 (Python)
 
-## 1. Introducción
+1. Introducción
 Este proyecto desarrolla una aplicación de consola en Python orientada a la gestión de tareas.
 El objetivo principal es aplicar estructuras lógicas y repetitivas vistas en clase, así como
 analizar las funcionalidades y la arquitectura del software desarrollado.
