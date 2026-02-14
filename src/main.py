@@ -63,6 +63,44 @@ def buscar_tarea(tareas):
     if coincidencias == 0:
         print("No se encontraron tareas con esa palabra o frase.")
 
+def marcar_completada(tareas):
+    """
+    Marca una tarea como completada.
+    - Valida que existan tareas
+    - Valida que el índice sea un número y esté en rango
+    """
+    if len(tareas) == 0:
+        print("No hay tareas para marcar como completadas.")
+        return
+
+    listar_tareas(tareas)
+
+    while True:
+        entrada = input("Ingrese el número de la tarea a completar (o 0 para cancelar): ").strip()
+
+        if entrada == "0":
+            print("Operación cancelada.")
+            return
+
+        if not entrada.isdigit():
+            print("Error: debe ingresar un número válido.")
+            continue
+
+        indice = int(entrada)
+        if indice < 1 or indice > len(tareas):
+            print("Error: número fuera de rango. Intente nuevamente.")
+            continue
+
+        tarea = tareas[indice - 1]
+        if tarea["completada"]:
+            print("Esa tarea ya está marcada como completada.")
+        else:
+            tarea["completada"] = True
+            print("Tarea marcada como completada.")
+
+        break
+
+
 
 
 def main():
@@ -77,7 +115,7 @@ def main():
         elif opcion == "2":
             listar_tareas(tareas)
         elif opcion == "3":
-            pass
+            marcar_completada(tareas)
         elif opcion == "4":
             pass
         elif opcion == "5":
