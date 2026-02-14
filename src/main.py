@@ -37,6 +37,33 @@ def listar_tareas(tareas):
         estado = "✓" if tarea["completada"] else " "
         print(f"{i}. [{estado}] {tarea['texto']}")
 
+def buscar_tarea(tareas):
+    """
+    Busca tareas que contengan una palabra o frase.
+    - Recorre la lista con for
+    - Cuenta coincidencias para mostrar 'no encontrado' si aplica
+    """
+    if len(tareas) == 0:
+        print("No hay tareas para buscar.")
+        return
+
+    clave = input("Ingrese palabra o frase a buscar: ").strip().lower()
+    if clave == "":
+        print("Error: la búsqueda no puede estar vacía.")
+        return
+
+    coincidencias = 0
+    print("\n--- Resultados de búsqueda ---")
+    for i, tarea in enumerate(tareas, start=1):
+        if clave in tarea["texto"].lower():
+            estado = "✓" if tarea["completada"] else " "
+            print(f"{i}. [{estado}] {tarea['texto']}")
+            coincidencias += 1
+
+    if coincidencias == 0:
+        print("No se encontraron tareas con esa palabra o frase.")
+
+
 
 def main():
     tareas = []  # Lista donde se almacenan las tareas
@@ -54,7 +81,7 @@ def main():
         elif opcion == "4":
             pass
         elif opcion == "5":
-            pass
+            buscar_tarea(tareas)
         elif opcion == "0":
             print("Saliendo del programa...")
             break
