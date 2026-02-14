@@ -1,4 +1,4 @@
-# Proyecto Autónomo 2 – Lógica de Programación en Python
+## Proyecto Autónomo 2 – Lógica de Programación en Python
 
 ## Introducción
 El presente proyecto corresponde al Proyecto Autónomo 2 de la asignatura de Lógica de Programación. El objetivo principal es analizar las funcionalidades y la arquitectura de una aplicación desarrollada en Python, aplicando los conocimientos adquiridos durante la unidad, especialmente el uso de estructuras lógicas y repetitivas.
