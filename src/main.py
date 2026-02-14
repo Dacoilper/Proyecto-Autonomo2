@@ -100,6 +100,45 @@ def marcar_completada(tareas):
 
         break
 
+def eliminar_tarea(tareas):
+    """
+    Elimina una tarea por número, con confirmación.
+    - Valida que existan tareas
+    - Valida número y rango
+    """
+    if len(tareas) == 0:
+        print("No hay tareas para eliminar.")
+        return
+
+    listar_tareas(tareas)
+
+    while True:
+        entrada = input("Ingrese el número de la tarea a eliminar (o 0 para cancelar): ").strip()
+
+        if entrada == "0":
+            print("Operación cancelada.")
+            return
+
+        if not entrada.isdigit():
+            print("Error: debe ingresar un número válido.")
+            continue
+
+        indice = int(entrada)
+        if indice < 1 or indice > len(tareas):
+            print("Error: número fuera de rango. Intente nuevamente.")
+            continue
+
+        tarea = tareas[indice - 1]
+        confirmacion = input(f"¿Seguro que desea eliminar '{tarea['texto']}'? (s/n): ").strip().lower()
+
+        if confirmacion == "s":
+            tareas.pop(indice - 1)
+            print("Tarea eliminada correctamente.")
+        else:
+            print("Eliminación cancelada.")
+
+        break
+
 
 
 
@@ -117,7 +156,7 @@ def main():
         elif opcion == "3":
             marcar_completada(tareas)
         elif opcion == "4":
-            pass
+            eliminar_tarea(tareas)
         elif opcion == "5":
             buscar_tarea(tareas)
         elif opcion == "0":
