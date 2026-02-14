@@ -1,10 +1,8 @@
-# Reporte – Proyecto Autónomo 2 (Python)
-
-1. Introducción
+#Reporte – Aprendizaje Autónomo 2 (Python)
+##1. Introducción
 Este proyecto desarrolla una aplicación de consola en Python orientada a la gestión de tareas.
 El objetivo principal es aplicar estructuras lógicas y repetitivas vistas en clase, así como
 analizar las funcionalidades y la arquitectura del software desarrollado.
-
 ## 2. Configuración del entorno (Paso 1)
 Para el desarrollo del proyecto se utilizó el lenguaje Python (versión 3.x) junto con el editor
 Visual Studio Code. El control de versiones se realizó mediante Git y el repositorio se alojó
