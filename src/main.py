@@ -22,6 +22,20 @@ def agregar_tarea(tareas):
             tareas.append(nueva_tarea)
             print("Tarea agregada correctamente.")
             break
+        
+def listar_tareas(tareas):
+    """
+    Muestra todas las tareas con su estado.
+    Usa un bucle for para recorrer la lista.
+    """
+    if len(tareas) == 0:
+        print("No hay tareas registradas.")
+        return
+
+    print("\n--- Lista de tareas ---")
+    for i, tarea in enumerate(tareas, start=1):
+        estado = "✓" if tarea["completada"] else " "
+        print(f"{i}. [{estado}] {tarea['texto']}")
 
 
 def main():
@@ -34,7 +48,7 @@ def main():
         if opcion == "1":
             agregar_tarea(tareas)
         elif opcion == "2":
-            pass
+            listar_tareas(tareas)
         elif opcion == "3":
             pass
         elif opcion == "4":
