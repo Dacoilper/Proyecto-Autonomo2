@@ -1,50 +1,20 @@
-#Reporte – Aprendizaje Autónomo 2 (Python)
-##1. Introducción
-Este proyecto desarrolla una aplicación de consola en Python orientada a la gestión de tareas.
-El objetivo principal es aplicar estructuras lógicas y repetitivas vistas en clase, así como
-analizar las funcionalidades y la arquitectura del software desarrollado.
-## 2. Configuración del entorno (Paso 1)
-Para el desarrollo del proyecto se utilizó el lenguaje Python (versión 3.x) junto con el editor
-Visual Studio Code. El control de versiones se realizó mediante Git y el repositorio se alojó
-en GitHub, donde se documentaron los avances del proyecto mediante commits.
-Además, se elaboraron diagramas de flujo para representar la lógica del programa.
+# Proyecto Autónomo 2 – Lógica de Programación en Python
 
-## 3. Funcionalidades implementadas
-La aplicación cuenta con un menú interactivo que permite:
-- Agregar tareas con validación de entrada.
-- Listar tareas mostrando su estado.
-- Marcar tareas como completadas.
-- Eliminar tareas con confirmación.
-- Buscar tareas por palabra o frase.
-- Salir del programa.
+## Introducción
+El presente proyecto corresponde al Proyecto Autónomo 2 de la asignatura de Lógica de Programación. El objetivo principal es analizar las funcionalidades y la arquitectura de una aplicación desarrollada en Python, aplicando los conocimientos adquiridos durante la unidad, especialmente el uso de estructuras lógicas y repetitivas.
 
-## 4. Arquitectura del programa
-El programa fue estructurado utilizando funciones para cada funcionalidad principal,
-lo que permite un código más organizado, legible y fácil de mantener.
-El flujo principal se ejecuta dentro de un bucle while que se repite hasta que el usuario
-decide salir del sistema.
+La aplicación desarrollada consiste en un gestor de tareas por consola, el cual permite al usuario interactuar mediante un menú y realizar distintas acciones sobre una lista de tareas.
 
-## 5. Evidencia investigada y análisis
-Para el desarrollo del proyecto se consultaron distintas fuentes relacionadas con Python
-y la programación estructurada. Estas fuentes permitieron comprender el uso correcto
-de bucles, condicionales y buenas prácticas en el manejo de funciones.
+## Configuración del entorno de desarrollo
+Para el desarrollo del proyecto se utilizó el lenguaje de programación Python en su versión 3.x. Como editor de código se empleó Visual Studio Code, ya que facilita la escritura y organización del código, además de integrar herramientas de depuración.
 
-## 6. Posición del estudiante
-Se optó por un diseño modular utilizando funciones, ya que facilita la comprensión del código
-y permite escalar el programa en el futuro. Asimismo, se priorizó la validación de datos de
-entrada para evitar errores durante la ejecución.
+El control de versiones se realizó mediante Git, y el proyecto fue alojado en un repositorio de GitHub. Esto permitió registrar los avances del desarrollo mediante commits y mantener una estructura ordenada del proyecto. Adicionalmente, se elaboraron diagramas de flujo para representar la lógica del programa antes de su implementación.
 
-## 7. Perspectivas alternativas
-Una alternativa hubiera sido utilizar estructuras de datos más simples, como listas de texto,
-sin embargo, se eligieron diccionarios para manejar el estado de las tareas. También pudo
-implementarse persistencia en archivos, pero se decidió mantener el alcance acorde a los
-contenidos de la unidad.
+## Funcionalidades del sistema
+La aplicación cuenta con un menú principal que se ejecuta de forma repetitiva hasta que el usuario decide salir del programa. Las funcionalidades implementadas son las siguientes:
 
-## 8. Conclusiones
-El proyecto permitió aplicar de manera práctica los conceptos de lógica de programación,
-estructuras repetitivas y condicionales. El uso de diagramas de flujo y control de versiones
-facilitó la organización del desarrollo y el análisis del sistema.
-
-## 9. Anexos
-- Diagramas de flujo: carpeta docs/diagramas
-- Código fuente: carpeta src
+- Agregar tareas, validando que la descripción no esté vacía.
+- Listar todas las tareas registradas, mostrando su estado.
+- Marcar una tarea como completada mediante su número.
+- Eliminar una tarea, solicitando confirmación al usuario.
+- Buscar tareas a partir d
