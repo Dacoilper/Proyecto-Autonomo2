@@ -6,6 +6,22 @@ def mostrar_menu():
     print("4. Eliminar tarea")
     print("5. Buscar tarea")
     print("0. Salir")
+    
+def agregar_tarea(tareas):
+    """
+    Agrega una tarea a la lista con validación:
+    - No permite texto vacío.
+    """
+    while True:
+        texto = input("Ingrese la descripción de la tarea: ").strip()
+
+        if texto == "":
+            print("Error: la tarea no puede estar vacía. Intente nuevamente.")
+        else:
+            nueva_tarea = {"texto": texto, "completada": False}
+            tareas.append(nueva_tarea)
+            print("Tarea agregada correctamente.")
+            break
 
 
 def main():
@@ -16,7 +32,7 @@ def main():
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
-            pass
+            agregar_tarea(tareas)
         elif opcion == "2":
             pass
         elif opcion == "3":
